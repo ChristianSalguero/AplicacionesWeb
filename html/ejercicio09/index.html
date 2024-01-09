@@ -1,0 +1,114 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Práctica 2.9: Formulario</title>
+    </head>
+    <body style="font-family: Verdana;">
+        <h1 style="text-align: center;">Formulario de recogida de datos</h1>
+        <form action="datos.php" method="POST" enctype="multipart/form-data">
+            <label for="nombre"><b>Nombre: </b></label>
+            <input type="text" id="nombre" name="nombre" maxlength="18" size="18" style="margin-bottom: 10px;" required>
+            <br>
+            <label for="apellidos"><b>Apellidos: </b></label>
+            <input type="text" id="apellidos" name="apellidos" maxlength="48" size="52" style="margin-bottom: 10px;" required>
+            <br>
+            <label for="edad"><b>Introduce tu fecha de nacimiento: </b></label>
+            <input type="date" id="edad" name="edad" style="margin-bottom: 10px;" required>
+            <br>
+            <label for="direccion"><b>Dirección: </b></label>
+            <input type="text" id="direccion" name="direccion" maxlength="48" size="52" style="margin-bottom: 13px;">
+            <br>
+            <label><b>Login y Password: </b></label>
+            <input type="text" name="login" max="8" size="12" required>
+            <input type="password" max="8" name="password" size="12" style="margin-bottom: 10px;" required>
+            <br>
+            <label for="photo"><b>Agrega tu foto de perfil: </b></label>
+            <input type="file" name="photo" id="photo" style="margin-bottom: 10px;">
+            <br>
+            <label for="sexo"><b>Sexo: </b></label>
+            <label>
+                Hombre<input type="radio" name="sexo" id="sexo" value="Hombre" required>
+            </label>
+            <label style="margin-left: 2px;">
+                Mujer<input type="radio" name="sexo" id="sexo" value="Mujer">
+            </label>
+            <label style="margin-left: 2px;">
+                Tractor<input type="radio" name="sexo" id="sexo" style="margin-bottom: 20px;" value="Tractor">
+            </label>
+            <br>
+            <label for="seguro"><b>Modalidades seguro contratados</b></label>
+            <br>
+            <label style="margin-left: 30px;">
+                Automóvil<input type="checkbox" id="seguro" name="seguro[]" value="Automovil">
+            </label>
+            <label style="margin-left: 50px;">
+                Hogar<input type="checkbox" id="seguro" name="seguro[]" value="hogar">
+            </label>
+            <label style="margin-left: 50px;">
+                Vida<input type="checkbox" id="seguro" name="seguro[]" value="vida" style="margin-bottom: 15px;">
+            </label>
+            <br>
+            <label for="seguroautomoviles" style="margin-left: 50px;"><b>Tipo de seguro automóviles:</b></label>
+            <br>
+            <label style="margin-left: 75px;">
+                Todo riesgo<input type="radio" id="seguroautomoviles" name="seguroautomoviles" value="Todo riesgo">
+            </label>
+            <label style="margin-left: 75px;">
+                Terceros<input type="radio" id="seguroautomoviles" name="seguroautomoviles" value="Terceros" style="margin-bottom: 15px; margin-top: 5px;">
+            </label>
+            <br>
+            <label for="segurohogar" style="margin-left: 50px;"><b>Tipo de seguro hogar:</b></label>
+            <br>
+            <label style="margin-left: 75px;">
+                Riesgo hogar<input type="radio" id="segurohogar" name="segurohogar" value="Riesgo hogar">
+            </label>
+            <label style="margin-left: 55px;">
+                Obligatorio<input type="radio" id="segurohogar" name="segurohogar" value="Obligatorio" style="margin-bottom: 15px; margin-top: 5px;">
+            </label>
+            <br>
+            <label for="segurovida" style="margin-left: 50px;"><b>Tipo de seguro vida:</b></label>
+            <br>
+            <label style="margin-left: 75px;">
+                Riesgo vida<input type="radio" id="segurovida" name="segurovida" value="Riesgo vida">
+            </label>
+            <label style="margin-left: 75px;">
+                Esencial<input type="radio" id="segurovida" name="segurovida" value="Esencial" style="margin-bottom: 10px; margin-top: 5px;">
+            </label>
+            <br>
+            <p style="margin-top: 20px; margin-bottom: 30px;"><b>Indique sus preferencias para contactar</b></p>
+            <label><b>Medio de contacto: </b></label>
+            <select name="codigopostal">
+                <option style="display: none;">Correo postal</option>
+                <option value="28001">28001</option>
+                <option value="28002">28002</option>
+                <option value="28003">28003</option>
+                <option value="28004">28004</option>
+                <option value="28005">28005</option>
+                <option value="28006">28006</option>
+                <option value="28007">28007</option>
+                <option value="28008">28008</option>
+                <option value="28009">28009</option>
+                <option value="28010">28010</option>
+                <option value="28011">28011</option>
+                <option value="28012">28012</option>
+                <option value="28013">28013</option>
+                <option value="28014">28014</option>
+                <option value="28015">28015</option>
+            </select>
+            <label for="horario" style="margin-left: 10px;"><b>Horario preferido: </b></label>
+            <select name="horario">
+                <option style="display: none;">Horario</option>
+                <option>Mañana</option>
+                <option>Tarde</option>
+                <option>noche</option>
+            </select>
+            <br><br>
+            <label for="comentarios"><b>Comentarios personales: </b></label>
+            <textarea id="comentarios" name="descripcion" rows="6" cols="60" style="vertical-align: middle; padding-top: 5px; resize: none;" placeholder="Introduzca aquí sus comentarios"></textarea>
+            <br>
+            <input type="submit" id="enviar" style="margin-left: 30vh; margin-top: 20px;" value="Registrarse">
+            <input type="reset" id="reset" style="margin-left: 5vh; margin-top: 20px;" value="Reestablecer TODOS los datos">
+        </form>
+    </body>
+</html>

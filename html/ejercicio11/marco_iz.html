@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-color: #010715;
+            }
+
+            a {
+                color: white;
+            }
+
+            a:hover {
+                color: red;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="contenedor" style="display: flex; align-items: center; height: 20vh; margin-left: 6vh;">
+            <img src="img/invaderwhite.png" style="width: 30px; height: auto;" alt="punto" class="imagen">
+            <p class="texto" style="margin-bottom: 20px; margin-left: 20px;"><a href="javascript:void(0);" onclick="cargarPagina('principal.html');">INICIO</a></p>
+        </div>
+        <div class="contenedor" style="display: flex; align-items: center; height: 10vh; margin-left: 6vh;">
+            <img src="img/invaderwhite.png" style="width: 30px; height: auto;" alt="punto" class="imagen">
+            <p class="texto" style="margin-bottom: 20px; margin-left: 20px;"><a href="javascript:void(0);" onclick="cargarPagina('album.html');">ALBUM DE FOTOS</a></p>
+        </div>
+        <div class="contenedor" style="display: flex; align-items: center; height: 20vh; margin-left: 6vh;">
+            <img src="img/invaderwhite.png" style="width: 30px; height: auto;" alt="punto" class="imagen">
+            <p class="texto" style="margin-bottom: 20px; margin-left: 20px;"><a href="javascript:void(0);" onclick="cargarPagina('agendatelefonos.html');">AGENDA DE TELEFONO</a></p>
+        </div>
+        <div class="contenedor" style="display: flex; align-items: center; height: 10vh; margin-left: 6vh;">
+            <img src="img/invaderwhite.png" style="width: 30px; height: auto;" alt="punto" class="imagen">
+            <p class="texto" style="margin-bottom: 20px; margin-left: 20px;"><a href="javascript:void(0);" onclick="cargarPagina('agendadirecciones.html');">AGENDA DE DIRECCIONES</a></p>
+        </div>
+
+        <script>
+            function cargarPagina(url) {
+                var contenidoFrame = parent.document.getElementById("marcocentral");
+                contenidoFrame.src = url;
+            }
+        </script>
+    </body>
+</html>

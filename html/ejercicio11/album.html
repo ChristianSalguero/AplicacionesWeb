@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #010715;
+                color: white;
+            }
+    
+            p {
+                margin-top: -20px;
+                font-size: 12px;
+            }
+
+            #gallery {
+                display: flex;
+            }
+    
+            .thumbnail {
+                margin: 10px;
+                cursor: pointer;
+                transition: transform 0.2s;
+            }
+    
+            .thumbnail:hover {
+                transform: scale(1.1);
+            }
+    
+            #enlarged {
+                display: none;
+                text-align: center;
+            }
+    
+            #enlarged img {
+                max-width: 100%;
+                max-height: 80vh;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Album de fotos</h1>
+        <p>haz click en la imagen deseada para ampliarla</p>
+        <div id="gallery">
+            <img class="thumbnail" src="img/imagen1.jpg" alt="Imagen 1" style="width: 300px; height: 200px;">
+            <img class="thumbnail" src="img/imagen2.jpg" alt="Imagen 2" style="width: 300px; height: 200px;">
+            <img class="thumbnail" src="img/imagen3.png" alt="Imagen 3" style="width: 300px; height: 200px;">
+        </div>
+        <div id="enlarged">
+            <img id="enlarged-image" src="" alt="Imagen Ampliada" style="width: 600px; height: 400px;">
+        </div>
+        <script>
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            const enlarged = document.getElementById('enlarged');
+            const enlargedImage = document.getElementById('enlarged-image');
+    
+            thumbnails.forEach(thumbnail => {
+                thumbnail.addEventListener('click', () => {
+                    const imageSrc = thumbnail.getAttribute('src');
+                    enlargedImage.setAttribute('src', imageSrc);
+                    enlarged.style.display = 'block';
+                });
+            });
+    
+            enlarged.addEventListener('click', () => {
+                enlarged.style.display = 'none';
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                color: white;
+                background-color: #010715;
+            }
+            a {
+                color: white;
+            }
+            a:hover {
+                color: red;
+            }
+            img {
+                margin-left: 27%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center;">Agenda de teléfonos</h1>
+        <img src="img/construccion.jpg">
+        <p style="text-align: center;"><a href="javascript:void(0);" onclick="cargarPagina('principal.html')">Volver a la página principal</a></p>
+
+        <script>
+            function cargarPagina(url) {
+                var contenidoFrame = parent.document.getElementById("principal");
+                contenidoFrame.src = url;
+            }
+        </script>
+    </body>
+</html>

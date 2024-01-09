@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Super Oferta</title>
+        <style>
+            .enlace1 {
+                border: 1px solid black;
+                padding: 20px 20px 20px 20px;
+                background-color: gray;
+                color: black;
+                margin-left: 30vh;
+            }
+            .enlace1:hover {
+                border: 3px solid white;
+                padding: 20px 20px 20px 20px;
+                background-color: black;
+                color: white;
+                margin-left: 29.6vh;
+            }
+            .enlace2 {
+                border: 1px solid black;
+                padding: 21px 55px 20px 55px;
+                background-color: gray;
+                color: black;
+                margin-left: 45vh;
+            }
+            .enlace2:hover {
+                border: 3px solid white;
+                padding: 21px 55px 20px 55px;
+                background-color: black;
+                color: white;
+                margin-left: 44.6vh;
+            }
+            .enlace3 {
+                border: 1px solid black;
+                padding: 21px 30px 20px 30px;
+                background-color: gray;
+                color: black;
+                margin-left: 55vh;
+            }
+            .enlace3:hover {
+                border: 3px solid white;
+                padding: 21px 30px 20px 30px;
+                background-color: black;
+                color: white;
+                margin-left: 54.7vh;
+            }
+            .contenido {
+                border: 1px solid black;
+                margin: 5vh 10vh 4vh 10vh;
+                
+            }
+            .head1, .head2, .head3, .head4, .head5, .content1, .content2, .content3, .content4, .content5 {
+                border: 2px solid black;
+            }
+            .head1, .head2, .head3, .head4, .head5 {
+                font-size: 20px;
+            }
+            .head1, .head3, .head5 {
+                width: 200px;
+            }
+            .content1, .content3, .content2, .content5 {
+                text-align: center;
+            }
+            .content2, .content4 {
+                max-width: 60vh;
+            }
+            .content2 {
+                width: 80vh;
+            }
+            p {
+                margin: 20px 40px 20px 30px;
+            }
+            #gallery {
+                display: flex;
+                margin: -20px 0 0 100px;
+            }
+            .thumbnail1, .thumbnail2, .thumbnail3 {
+                margin: 10px;
+                cursor: pointer;
+                transition: transform 0.2s;
+            }
+            .thumbnail1:hover, .thumbnail2:hover, .thumbnail3:hover {
+                transform: scale(1.1);
+            }
+            #enlarged1, #enlarged2, #enlarged3 {
+                display: none;
+                text-align: center;
+            }
+            #enlarged img {
+                max-width: 100%;
+                max-height: 80vh;
+            }
+        </style>
+    </head>
+    <body style="background-color: #507494;">
+        <table style="height: 100%; width: 100%;" border="0">
+            <tr>
+                <td>
+                    <table style="display: flex; margin-top: 2vh;">
+                        <tr>
+                            <td>
+                                <a href="viajeasumedida.html" class="enlace1">Viajes a medida</a>
+                                <a href="index.html" class="enlace2">Inicio</a>
+                                <a href="superoferta.html" class="enlace3">Super Ofertas</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                <table  class="contenido" style="border-collapse: collapse; border: 2px solid black;">
+                                    <tr class="contenido">
+                                        <th class="head1">Destino</th>
+                                        <th class="head2">Imágenes</th>
+                                        <th class="head3">¿Cuántos días?</th>
+                                        <th class="head4">¿Qué haríamos en esos días?</th>
+                                        <th class="head5">¿Cuál es el precio?</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="content1">Tokio</td>
+                                        <td class="content2">
+                                            <p class="textoimg1">haz click en la imagen deseada para ampliarla</p>
+                                            <div id="gallery">
+                                                <img class="thumbnail1" src="img/imagen1.jpg" alt="Imagen 1" style="width: 100px; height: 50px;">
+                                                <img class="thumbnail1" src="img/imagen2.jpg" alt="Imagen 2" style="width: 100px; height: 50px;">
+                                                <img class="thumbnail1" src="img/imagen3.jpg" alt="Imagen 3" style="width: 100px; height: 50px;">
+                                            </div>
+                                            <div id="enlarged1">
+                                                <img id="enlarged-image1" src="" alt="Imagen Ampliada" style="width: 300px; height: 200px;">
+                                            </div>
+                                        </td>
+                                        <td class="content3">7 días</td>
+                                        <td class="content4"><p>Durante una estadía de 7 días en Tokio, tendrás la oportunidad de explorar la metrópolis más emocionante de Japón. Visita los icónicos barrios de Shinjuku y Shibuya, admira el paisaje urbano desde la Torre de Tokio, sumérgete en la cultura en el Museo Edo-Tokyo y disfruta de la auténtica gastronomía japonesa. También recomendamos una excursión a Nikko para experimentar la belleza natural y los templos históricos.</p></td>
+                                        <td class="content5">$1,499</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content1">Kioto</td>
+                                        <td class="content2">
+                                            <p class="textoimg2">haz click en la imagen deseada para ampliarla</p>
+                                            <div id="gallery">
+                                                <img class="thumbnail2" src="img/imagen4.jpg" alt="Imagen 4" style="width: 100px; height: 50px;">
+                                                <img class="thumbnail2" src="img/imagen5.jpg" alt="Imagen 5" style="width: 100px; height: 50px;">
+                                                <img class="thumbnail2" src="img/imagen6.jpg" alt="Imagen 6" style="width: 100px; height: 50px;">
+                                            </div>
+                                            <div id="enlarged2">
+                                                <img id="enlarged-image2" src="" alt="Imagen Ampliada" style="width: 300px; height: 200px;">
+                                            </div>
+                                        </td>
+                                        <td class="content3">5 días</td>
+                                        <td class="content4"><p>Kioto es un tesoro cultural de Japón y en 5 días podrás explorar sus maravillas. Pasea por el Bosque de Bambú de Arashiyama, admira los templos dorados como Kinkaku-ji y Kiyomizu-dera, y disfruta de una auténtica ceremonia del té. No te pierdas un viaje a Nara para interactuar con ciervos amigables y explorar su rica historia.</p></td>
+                                        <td class="content5">$999</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content1">Osaka</td>
+                                        <td class="content2">
+                                            <p class="textoimg3">haz click en la imagen deseada para ampliarla</p>
+                                            <div id="gallery">
+                                                <img class="thumbnail3" src="img/imagen7.jpg" alt="Imagen 7" style="width: 100px; height: 50px;">
+                                                <img class="thumbnail3" src="img/imagen8.jpg" alt="Imagen 8" style="width: 100px; height: 50px;">
+                                                <img class="thumbnail3" src="img/imagen9.jpg" alt="Imagen 9" style="width: 100px; height: 50px;">
+                                            </div>
+                                            <div id="enlarged3">
+                                                <img id="enlarged-image3" src="" alt="Imagen Ampliada" style="width: 300px; height: 200px;">
+                                            </div>
+                                        </td>
+                                        <td class="content3">4 días</td>
+                                        <td class="content4"><p>Osaka es la capital culinaria de Japón, y en 4 días, podrás degustar una variedad de platos deliciosos. Visita el Castillo de Osaka y el Universal Studios Japan para la diversión y la emoción. Además, no te pierdas la experiencia de compras en Dotonbori y disfruta de la vida nocturna animada de la ciudad.</p></td>
+                                        <td class="content5">$820</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table style="display: flex; margin-top: 2vh;">
+                        <tr>
+                            <td>
+                                <a href="viajeasumedida.html" class="enlace1">Viajes a medida</a>
+                                <a href="index.html" class="enlace2">Inicio</a>
+                                <a href="superoferta.html" class="enlace3">Super Ofertas</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <br> <br>
+        <script>
+            const thumbnails1 = document.querySelectorAll('.thumbnail1');
+            const enlarged1 = document.getElementById('enlarged1');
+            const enlargedImage1 = document.getElementById('enlarged-image1');
+            
+            const thumbnails2 = document.querySelectorAll('.thumbnail2');
+            const enlarged2 = document.getElementById('enlarged2');
+            const enlargedImage2 = document.getElementById('enlarged-image2');
+
+            const thumbnails3 = document.querySelectorAll('.thumbnail3');
+            const enlarged3 = document.getElementById('enlarged3');
+            const enlargedImage3 = document.getElementById('enlarged-image3');
+    
+            thumbnails1.forEach(thumbnail1 => {
+                thumbnail1.addEventListener('click', () => {
+                    const imageSrc = thumbnail1.getAttribute('src');
+                    enlargedImage1.setAttribute('src', imageSrc);
+                    enlarged1.style.display = 'block';
+                });
+            });
+            enlarged1.addEventListener('click', () => {
+                enlarged1.style.display = 'none';
+            });
+
+            thumbnails2.forEach(thumbnail2 => {
+                thumbnail2.addEventListener('click', () => {
+                    const imageSrc = thumbnail2.getAttribute('src');
+                    enlargedImage2.setAttribute('src', imageSrc);
+                    enlarged2.style.display = 'block';
+                });
+            });
+            enlarged2.addEventListener('click', () => {
+                enlarged2.style.display = 'none';
+            });
+
+            thumbnails3.forEach(thumbnail3 => {
+                thumbnail3.addEventListener('click', () => {
+                    const imageSrc = thumbnail3.getAttribute('src');
+                    enlargedImage3.setAttribute('src', imageSrc);
+                    enlarged3.style.display = 'block';
+                });
+            });
+            enlarged3.addEventListener('click', () => {
+                enlarged3.style.display = 'none';
+            });
+
+            function hideEnlargedImages() {
+                enlarged3.style.display = 'none';
+            }
+
+            thumbnails1.forEach(thumbnail1 => {
+                thumbnail1.addEventListener('click', () => {
+                    enlarged2.style.display = 'none';
+                    enlarged3.style.display = 'none';
+                });
+            });
+            thumbnails2.forEach(thumbnail2 => {
+                thumbnail2.addEventListener('click', () => {
+                    enlarged1.style.display = 'none';
+                    enlarged3.style.display = 'none';
+                });
+            });
+            thumbnails3.forEach(thumbnail3 => {
+                thumbnail3.addEventListener('click', () => {
+                    enlarged1.style.display = 'none';
+                    enlarged2.style.display = 'none';
+                });
+            });            
+        </script>
+    </body>
+</html>
