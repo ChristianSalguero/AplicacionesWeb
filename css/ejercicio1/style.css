@@ -1,1 +1,10 @@
-/* esto es una prueba */ 
+p::first-letter {
+    font-size: 24px;
+}
+p::first-line {
+    text-decoration: underline;
+}
+img {
+    width: 300px;
+    height: 200px;
+}
