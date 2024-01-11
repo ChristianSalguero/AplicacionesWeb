@@ -1,0 +1,38 @@
+h1 {
+    /* subrayamos los h1 */
+    text-decoration: underline; 
+}
+
+.clase2 {
+    /* Coloreamos de verde las etiquetas con clase 2 */
+    color: #006600;
+}
+
+.clase2 span {
+    /* Los span que están dentro de las etiquetas con clase 2, están subrayadas. */
+    text-decoration: underline;
+}
+
+.clase1 {
+    /* Coloreamos las etiquetas con clase 1 a naranja */
+    color: #FF6600;
+}
+
+.clase1 span {
+    /* Ponemos en negrita todos los span que se encuentran dentro de clase1 */
+    font-weight: bold;
+    /* Ponemos de color rojo todos los span que se encuentran dentro de clase1 */
+    color: #FF0044;
+}
+
+#despedida {
+    /* Alineamos a la derecha, coloresmos de rojo y ponemos un background de color #99CCFF a todos las etiquetas que contengan el id "despedida" */
+    text-align: right;
+    color: red;
+    background-color: #99CCFF;
+}
+
+td[bgcolor="navy"] {
+    /* Ponemos de color amarillo el contenido de las celdas que tengan un fondo de color 'navy'. */
+    color:yellow;
+}
