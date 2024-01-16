@@ -1,0 +1,26 @@
+.encabezado {
+    font-family: Arial;
+    background-color: #3A5A0E;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    height: 40px;
+    padding-top: 1px;
+    width: 100%;
+    text-align: center;
+}
+
+.contenido {
+    font-family: Arial;
+    background-color: #BFF2CC;
+    font-size: 12px;
+    border: 2px #3A5A0E solid;
+    padding-left: 15px;
+    font-style: italic;
+    color: black;
+    line-height: 4px;
+}
+
+#primero {
+    padding-top: 3px;
+}
