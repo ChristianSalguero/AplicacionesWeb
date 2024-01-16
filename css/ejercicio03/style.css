@@ -1,0 +1,41 @@
+h1 {
+    font-family: Arial;
+    font-size: large;
+    font-style: italic;
+    color: black;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 15px;
+    margin: 10px;
+}
+
+h2 {
+    font-family: Arial;
+    font-size: medium;
+    font-synthesis: bold;
+    color: navy;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-align: left;
+}
+
+p {
+    font-family: Verdana;
+    font-size: medium;
+    color: yellow;
+    text-align: justify;
+    text-indent: 10px;
+}
+
+body {
+    background-image: url(BG.jpg);
+}
+
+img {
+    height: 200px;
+    width: 400px;
+    border-width: 2px;
+    border-style: dotted;
+    border-color: black;
+}
