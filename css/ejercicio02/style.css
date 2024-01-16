@@ -36,3 +36,14 @@ td[bgcolor="navy"] {
     /* Ponemos de color amarillo el contenido de las celdas que tengan un fondo de color 'navy'. */
     color:yellow;
 }
+
+tr.titulo td[bgcolor="red"] {
+    color: white;
+    background-color: navy;
+    text-decoration: underline;
+    text-align: center;
+}
+
+p::first-letter {
+    font-size: 2em;
+}
