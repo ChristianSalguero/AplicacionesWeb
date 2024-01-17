@@ -1,0 +1,38 @@
+#imagen {
+    position: absolute; 
+    width: 200px; 
+    height: 115px; 
+    z-index: 1; 
+    left: 5px; 
+    top: 5px;
+}
+#parrafo1 {
+    padding: 8 8 8 8px;
+    margin: 8 8 8 8px;
+    position: absolute; 
+    width: 610px; 
+    height: 160px; 
+    z-index: 2; 
+    left: 24px; 
+    top: 233px; 
+    background-color: #FFFFCC; 
+    border: 2px solid #000000; 
+    background-image: url(fondo.JPG);
+    letter-spacing: -0.3px;
+}
+#parrafo2 {
+    padding: 8 8 8 8px;
+    margin: 8 8 8 8px;
+    position: absolute; 
+    width: 175px; 
+    height: 115px; 
+    z-index: 3;
+    background-color: #FFCC00; 
+    border: 3px dotted #000000; 
+    left: 317px; 
+    top: 140px;
+}
+
+#especial {
+    letter-spacing: 0.2px;
+}
