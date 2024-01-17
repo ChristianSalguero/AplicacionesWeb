@@ -1,0 +1,42 @@
+#img1 {
+    position: fixed;
+} 
+
+#img2 {
+    position: fixed;
+    margin: 150px 0 0 150px;
+}
+
+.texto {
+    position: fixed;
+    border: 1px dotted black;
+    height: 300px;
+    width: 292px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 300px 0 0 300px;
+    background-color: white;
+}
+
+#img3 {
+    position: absolute;
+    top: 670px;
+} 
+
+#img4 {
+    position: absolute;
+    margin: 150px 0 0 150px;
+    top: 670px;
+}
+
+.texto2 {
+    position: absolute;
+    border: 1px dotted black;
+    height: 300px;
+    width: 292px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 300px 0 0 300px;
+    background-color: white;
+    top: 670px;
+}
