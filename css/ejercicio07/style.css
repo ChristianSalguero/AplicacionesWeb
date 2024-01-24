@@ -1,7 +1,61 @@
 body {
-    margin: 0 0 0 0;
-}
+    height: 500px;
+    background-image: url("img/Caribe.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+  }
+
 div.titulo {
     background-image: url(img/mapa.jpg);
+    text-align: right;
+    height: 53px;
+    width: 830px;
+    margin-left: 40px;
+    position: fixed;
+}
+
+div.titulo p {
+    font-size: 26px;
+    color: #FFFF99;
+    font-family: Arial;
+    margin: 15px 12px 0 0;
+}
+
+hr.primer {
+    padding: 0;
+    margin: 0 0 0 0;
+    border-color: white;
+}
+
+hr.segundo {
+    padding: 0;
+    margin: 0.5px 0 0 0;
+    border-color: white;
+}
+
+div.miami {
+    border: 3px solid white;
+    background-color: #6699FF;
+    height: 50px;
+    width: 150px;
+    position: absolute;
+    top: 300px;
+    left: 800px;
+}
+
+div.miami p {
     color: white;
+    font-family: Verdana;
+    font-size: 20px;
+    text-align: center;
+    margin: 11px 0 0 0;
+}
+
+div.usa {
+    border: 5px solid white;
+    background-color: #6699FF;
+    position: absolute;
+    top: 200px;
+    left: 600px;
+    z-index: -1;
 }
