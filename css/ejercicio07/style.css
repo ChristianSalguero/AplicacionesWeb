@@ -12,7 +12,7 @@ body {
     width: 830px;
     margin-left: 40px;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
 }
 
 .titulo p {
@@ -178,18 +178,18 @@ div.miami p {
     color: white;
     padding: 10px 10px 10px 40px;
     height: 120px;
-    width: 1150px;
+    width: 980px;
     text-transform: uppercase;
     font-family: Helvetica;
     font-size: 15px;
     position: relative;
     top: 50px;
-    left: 170px;
+    left: 350px;
     text-align: right;
-} 
+}
 
 /* .datos p {
-    
+    padding: 0 0 0 0;
 } */
 
 .final {
